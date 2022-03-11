@@ -11,6 +11,7 @@ class Alert extends Model
         'subcategory_id',
         'notification',
         'report',
+        'sentiment',
     ];
 
     public function category(){

@@ -14,7 +14,8 @@ Route::middleware(['auth'])->group(function () {
         Route::post('Alerts/report', 'Cornelio\Alert\AlertsController@report')->name('alerts.report');
         Route::post('Alerts/reportOff', 'Cornelio\Alert\AlertsController@reportOff')->name('alerts.reportOff');
         Route::post('Alerts/consult', 'Cornelio\Alert\AlertsController@consult')->name('alerts.consult');
-
+        Route::post('Alerts/sentiment', 'Cornelio\Alert\AlertsController@sentiment')->name('alerts.sentiment');
+        Route::post('Alerts/sentimentOff', 'Cornelio\Alert\AlertsController@sentimentOff')->name('alerts.sentimentOff');
 
         Route::get('Analysis', 'Cornelio\Analysis\AnalysisController@index')->name('analysis.index');
 

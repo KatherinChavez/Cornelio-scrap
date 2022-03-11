@@ -52,6 +52,18 @@ class AlertsController extends Controller
             'report' => 0,
         ]);
     }
+    public function sentiment(Request $request){
+        $alerts = Alert::where('subcategory_id', $request->id)->first();
+        $alerts->update([
+            'sentiment' => 1,
+        ]);
+    }
+    public function sentimentOff(Request $request){
+        $alerts = Alert::where('subcategory_id', $request->id)->first();
+        $alerts->update([
+            'sentiment' => 0,
+        ]);
+    }
     public function consult(Request $request){
         $alerts=Alert::join('subcategory','subcategory.id', 'alert.subcategory_id')
             ->where('subcategory.company_id', session('company_id'))
