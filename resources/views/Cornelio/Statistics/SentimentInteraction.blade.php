@@ -7,8 +7,8 @@
                 <div class="card animated bounceIn">
                     <div class="card-header">
                         <div class="card-title">
-                            <h3 class="fw-bold"><span><i class="fas fa-chart-pie"></i> Sentimientos generados</span></h3>
-                        </div>
+                            <h3 class="fw-bold"><span><i class="fas fa-chart-pie"></i> Sentimientos </span></h3>
+                        </div>  
                     </div>
                     <div class="card-body">
                         <div class="form-group form-control" id="queryTopics">
